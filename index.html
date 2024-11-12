@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/file-upload-with-preview/6.1.2/style.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div class="alert-list"></div>
+
+  <div class="chat-app">
+    <header class="header">
+      <div class="inner-logo">
+        <a href="index.html">Chat App</a>
+      </div>
+      <div class="inner-actions">
+        <a href="login.html" button-login>
+          Đăng nhập
+        </a>
+        <a href="register.html" button-register>
+          Đăng ký
+        </a>
+        <a href="javascript:;" button-logout>
+          Đăng xuất
+        </a>
+      </div>
+    </header>
+
+    <div class="chat" chat>
+      <div class="inner-body">
+
+        <!-- <div class="inner-incoming">
+          <div class="inner-name">
+            Em Yêu
+          </div>
+          <div class="inner-content">
+            A ơi sang nhà e nha, nhà e không có ai ở nhà cả
+          </div>
+        </div>
+        <div class="inner-outgoing">
+          <button class="button-edit" button-edit>
+            <i class="fa-solid fa-ellipsis"></i>
+          </button>
+          <div class="inner-content">
+            Thế à? Ok e iu
+          </div>
+        </div> -->
+
+      </div>
+      <div class="inner-foot">
+        <form action="" class="inner-form">
+          <input type="text" name="content" placeholder="Nhập nội dung...">
+          <span class="button-icon">
+            <i class="fa-regular fa-face-smile"></i>
+          </span>
+          <label for="file-upload-with-preview-upload-images" class="button-image">
+            <i class="fa-regular fa-images"></i>
+          </label>
+          <button>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        <div class="tooltip" role="tooltip">
+          <emoji-picker class="light"></emoji-picker>
+        </div>
+        <div class="custom-file-container" data-upload-id="upload-images"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/file-upload-with-preview/6.1.2/index.iife.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.6/viewer.min.js"></script> 
+  <script type="module" src="assets/js/script.js"></script>
+</body>
+
+</html>
